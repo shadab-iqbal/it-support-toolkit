@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#12382f">
+  <meta name="description" content="A practical IT support toolkit by Shadab Iqbal. Find clear troubleshooting guides, work through a diagnosis, and prepare a useful support request.">
+  <title>SupportKit — IT support, made clearer</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./js/data.js" defer></script>
+  <script src="./js/core.js" defer></script>
+  <script src="./js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="SupportKit home"><span class="brand-mark">s<span>k</span></span><span>SupportKit<small>THE IT SUPPORT TOOLKIT</small></span></a>
+      <div class="workspace-label"><span class="status-dot"></span> Your support workspace</div>
+      <nav id="navigation"></nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-tip"><span class="eyebrow">A BETTER SUPPORT HABIT</span><p>Start with the task.<br>Finish with it working.</p><a href="#diagnose">Find your next step <span aria-hidden="true">↗</span></a></div>
+        <a class="creator" href="#about"><span class="avatar">SI</span><span>Shadab Iqbal<small>IT specialist · Creator</small></span><span aria-hidden="true">↗</span></a>
+      </div>
+    </aside>
+    <div class="main-shell">
+      <header class="topbar">
+        <button id="menu-toggle" class="icon-button mobile-only" aria-label="Open navigation" aria-expanded="false" aria-controls="navigation">☰</button>
+        <div class="breadcrumb"><span id="workspace-name">My workspace</span> <span aria-hidden="true">/</span> <strong id="page-label">Overview</strong></div>
+        <div class="topbar-actions"><span class="local-badge"><span class="status-dot"></span> Browser-local workspace</span><a class="button button-small" href="#requests/new">Create a request <span aria-hidden="true">+</span></a></div>
+      </header>
+      <main id="main" tabindex="-1"></main>
+      <footer><span>SupportKit <span aria-hidden="true">·</span> Built for clearer support</span><a href="#settings">Data & settings</a><a href="#about">About this toolkit</a></footer>
+    </div>
+  </div>
+  <dialog id="confirm-dialog" aria-labelledby="confirm-title"><form method="dialog"><span class="eyebrow">PLEASE CONFIRM</span><h2 id="confirm-title">Remove this item?</h2><p id="confirm-message"></p><div class="button-row"><button class="button button-secondary" value="cancel">Keep it</button><button class="button button-danger" value="confirm">Remove</button></div></form></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript><div class="noscript">SupportKit needs JavaScript to run its guides and tools. Enable JavaScript, then reload this page.</div></noscript>
+</body>
+</html>

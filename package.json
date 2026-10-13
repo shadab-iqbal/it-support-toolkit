@@ -1,0 +1,12 @@
+{
+  "name": "supportkit-it-support-toolkit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Buildless IT support toolkit by Shadab Iqbal, ready for GitHub Pages.",
+  "scripts": {
+    "test": "node --test tests/*.test.cjs",
+    "check": "node --check js/core.js && node --check js/data.js && node --check js/app.js"
+  },
+  "engines": { "node": ">=18" },
+  "license": "MIT"
+}
